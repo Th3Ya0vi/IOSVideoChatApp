@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006DF12C180AA5D600D3BA63 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006DF12A180AA5D600D3BA63 /* SignUpViewController.m */; };
+		006DF12D180AA5D600D3BA63 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006DF12B180AA5D600D3BA63 /* SignUpViewController.xib */; };
+		006DF130180ABE2C00D3BA63 /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006DF12F180ABE2B00D3BA63 /* UserCell.m */; };
+		006DF132180ABE8500D3BA63 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006DF131180ABE8500D3BA63 /* UserCell.xib */; };
+		006DF136180AC18600D3BA63 /* UsersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006DF135180AC18600D3BA63 /* UsersListViewController.xib */; };
+		006DF138180AD7AD00D3BA63 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006DF137180AD7AC00D3BA63 /* UserDetailViewController.xib */; };
+		006DF13C180AE2A900D3BA63 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 006DF13B180AE2A900D3BA63 /* User.m */; };
+		006DF141180AE72400D3BA63 /* VideoCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006DF13F180AE72400D3BA63 /* VideoCallViewController.m */; };
+		006DF142180AE72400D3BA63 /* VideoCallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006DF140180AE72400D3BA63 /* VideoCallViewController.xib */; };
+		006DF149180AFACA00D3BA63 /* callAccept.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 006DF146180AFACA00D3BA63 /* callAccept.jpg */; };
+		006DF14A180AFACA00D3BA63 /* callReject.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 006DF147180AFACA00D3BA63 /* callReject.jpg */; };
+		006DF14B180AFACA00D3BA63 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 006DF148180AFACA00D3BA63 /* person.png */; };
+		006DF14D180AFAE100D3BA63 /* ringing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 006DF14C180AFAE100D3BA63 /* ringing.wav */; };
+		006DF14F180B020000D3BA63 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DF14E180B01FF00D3BA63 /* QuartzCore.framework */; };
+		006DF151180B046800D3BA63 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DF150180B046700D3BA63 /* libc++.dylib */; };
 		00A2B1FF1807299A00A4742C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A2B1FE1807299A00A4742C /* UIKit.framework */; };
 		00A2B2011807299A00A4742C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A2B2001807299A00A4742C /* Foundation.framework */; };
 		00A2B2031807299A00A4742C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A2B2021807299A00A4742C /* CoreGraphics.framework */; };
@@ -16,9 +31,7 @@
 		00A2B2111807299A00A4742C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A2B2101807299A00A4742C /* Default.png */; };
 		00A2B2131807299A00A4742C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A2B2121807299A00A4742C /* Default@2x.png */; };
 		00A2B2151807299A00A4742C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A2B2141807299A00A4742C /* Default-568h@2x.png */; };
-		00A2B2181807299A00A4742C /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2B2171807299A00A4742C /* ChatViewController.m */; };
-		00A2B21B1807299A00A4742C /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A2B2191807299A00A4742C /* ChatViewController.xib */; };
-		00A2B22218072AA400A4742C /* fcebook_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A2B22118072AA400A4742C /* fcebook_login.png */; };
+		00A2B2181807299A00A4742C /* UsersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2B2171807299A00A4742C /* UsersListViewController.m */; };
 		00A2B22A1807311000A4742C /* SplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2B2291807311000A4742C /* SplashController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		00A2B22C1807316200A4742C /* SplashController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A2B22B1807316200A4742C /* SplashController.xib */; };
 		00A2B29E180731A100A4742C /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2B230180731A100A4742C /* Facebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -197,10 +210,28 @@
 		00A2B4221807473100A4742C /* Icon~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A2B41B1807473000A4742C /* Icon~ipad@2x.png */; };
 		00A96F741807A450005A510C /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A96F731807A450005A510C /* pin.png */; };
 		00A96F781807C0DB005A510C /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A96F761807C0DB005A510C /* UserDetailViewController.m */; };
-		00A96F791807C0DB005A510C /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A96F771807C0DB005A510C /* UserDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		006DF129180AA5D500D3BA63 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = ../SignUpViewController.h; sourceTree = "<group>"; };
+		006DF12A180AA5D600D3BA63 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = ../SignUpViewController.m; sourceTree = "<group>"; };
+		006DF12B180AA5D600D3BA63 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignUpViewController.xib; path = ../../SignUpViewController.xib; sourceTree = "<group>"; };
+		006DF12E180ABE2B00D3BA63 /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCell.h; sourceTree = "<group>"; };
+		006DF12F180ABE2B00D3BA63 /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCell.m; sourceTree = "<group>"; };
+		006DF131180ABE8500D3BA63 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserCell.xib; path = ../../UserCell.xib; sourceTree = "<group>"; };
+		006DF135180AC18600D3BA63 /* UsersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UsersListViewController.xib; path = ../../UsersListViewController.xib; sourceTree = "<group>"; };
+		006DF137180AD7AC00D3BA63 /* UserDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserDetailViewController.xib; path = ../../UserDetailViewController.xib; sourceTree = "<group>"; };
+		006DF13A180AE2A900D3BA63 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		006DF13B180AE2A900D3BA63 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		006DF13E180AE72400D3BA63 /* VideoCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCallViewController.h; sourceTree = "<group>"; };
+		006DF13F180AE72400D3BA63 /* VideoCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCallViewController.m; sourceTree = "<group>"; };
+		006DF140180AE72400D3BA63 /* VideoCallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoCallViewController.xib; path = ../../Controllers/VideoCallViewController.xib; sourceTree = "<group>"; };
+		006DF146180AFACA00D3BA63 /* callAccept.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = callAccept.jpg; sourceTree = "<group>"; };
+		006DF147180AFACA00D3BA63 /* callReject.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = callReject.jpg; sourceTree = "<group>"; };
+		006DF148180AFACA00D3BA63 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		006DF14C180AFAE100D3BA63 /* ringing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringing.wav; sourceTree = "<group>"; };
+		006DF14E180B01FF00D3BA63 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		006DF150180B046700D3BA63 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		00A2B1FB1807299A00A4742C /* VideoChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A2B1FE1807299A00A4742C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00A2B2001807299A00A4742C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -214,13 +245,11 @@
 		00A2B2101807299A00A4742C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		00A2B2121807299A00A4742C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		00A2B2141807299A00A4742C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		00A2B2161807299A00A4742C /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		00A2B2171807299A00A4742C /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
-		00A2B21A1807299A00A4742C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ChatViewController.xib; sourceTree = "<group>"; };
-		00A2B22118072AA400A4742C /* fcebook_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fcebook_login.png; sourceTree = "<group>"; };
-		00A2B2281807311000A4742C /* SplashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashController.h; sourceTree = "<group>"; };
-		00A2B2291807311000A4742C /* SplashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashController.m; sourceTree = "<group>"; };
-		00A2B22B1807316200A4742C /* SplashController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashController.xib; sourceTree = "<group>"; };
+		00A2B2161807299A00A4742C /* UsersListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UsersListViewController.h; path = ../UsersListViewController.h; sourceTree = "<group>"; };
+		00A2B2171807299A00A4742C /* UsersListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UsersListViewController.m; path = ../UsersListViewController.m; sourceTree = "<group>"; };
+		00A2B2281807311000A4742C /* SplashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashController.h; path = ../SplashController.h; sourceTree = "<group>"; };
+		00A2B2291807311000A4742C /* SplashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashController.m; path = ../SplashController.m; sourceTree = "<group>"; };
+		00A2B22B1807316200A4742C /* SplashController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SplashController.xib; path = ../../SplashController.xib; sourceTree = "<group>"; };
 		00A2B22F180731A100A4742C /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		00A2B230180731A100A4742C /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
 		00A2B231180731A100A4742C /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
@@ -484,9 +513,8 @@
 		00A2B41A1807473000A4742C /* Icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon~ipad.png"; sourceTree = "<group>"; };
 		00A2B41B1807473000A4742C /* Icon~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon~ipad@2x.png"; sourceTree = "<group>"; };
 		00A96F731807A450005A510C /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
-		00A96F751807C0DB005A510C /* UserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
-		00A96F761807C0DB005A510C /* UserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailViewController.m; sourceTree = "<group>"; };
-		00A96F771807C0DB005A510C /* UserDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
+		00A96F751807C0DB005A510C /* UserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDetailViewController.h; path = ../UserDetailViewController.h; sourceTree = "<group>"; };
+		00A96F761807C0DB005A510C /* UserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDetailViewController.m; path = ../UserDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +522,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006DF151180B046800D3BA63 /* libc++.dylib in Frameworks */,
+				006DF14F180B020000D3BA63 /* QuartzCore.framework in Frameworks */,
 				00A2B3741807431A00A4742C /* libresolv.dylib in Frameworks */,
 				00A2B372180742D600A4742C /* libxml2.2.dylib in Frameworks */,
 				00A2B36E180742AD00A4742C /* libz.1.1.3.dylib in Frameworks */,
@@ -519,9 +549,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006DF139180AE28000D3BA63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				006DF13A180AE2A900D3BA63 /* User.h */,
+				006DF13B180AE2A900D3BA63 /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		006DF13D180AE6EB00D3BA63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				006DF129180AA5D500D3BA63 /* SignUpViewController.h */,
+				006DF12A180AA5D600D3BA63 /* SignUpViewController.m */,
+				00A2B2161807299A00A4742C /* UsersListViewController.h */,
+				00A2B2171807299A00A4742C /* UsersListViewController.m */,
+				00A2B2281807311000A4742C /* SplashController.h */,
+				00A2B2291807311000A4742C /* SplashController.m */,
+				00A96F751807C0DB005A510C /* UserDetailViewController.h */,
+				00A96F761807C0DB005A510C /* UserDetailViewController.m */,
+				006DF13E180AE72400D3BA63 /* VideoCallViewController.h */,
+				006DF13F180AE72400D3BA63 /* VideoCallViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		006DF143180AE7C900D3BA63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				006DF14C180AFAE100D3BA63 /* ringing.wav */,
+				006DF144180AE7C900D3BA63 /* Images */,
+				006DF145180AE7C900D3BA63 /* Xibs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		006DF144180AE7C900D3BA63 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				006DF146180AFACA00D3BA63 /* callAccept.jpg */,
+				006DF147180AFACA00D3BA63 /* callReject.jpg */,
+				006DF148180AFACA00D3BA63 /* person.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		006DF145180AE7C900D3BA63 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				006DF140180AE72400D3BA63 /* VideoCallViewController.xib */,
+				006DF12B180AA5D600D3BA63 /* SignUpViewController.xib */,
+				006DF135180AC18600D3BA63 /* UsersListViewController.xib */,
+				00A2B22B1807316200A4742C /* SplashController.xib */,
+				006DF131180ABE8500D3BA63 /* UserCell.xib */,
+				006DF137180AD7AC00D3BA63 /* UserDetailViewController.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		00A2B1F21807299A00A4742C = {
 			isa = PBXGroup;
 			children = (
+				006DF150180B046700D3BA63 /* libc++.dylib */,
+				006DF14E180B01FF00D3BA63 /* QuartzCore.framework */,
 				00A2B3731807431A00A4742C /* libresolv.dylib */,
 				00A2B371180742D600A4742C /* libxml2.2.dylib */,
 				00A2B36F180742C600A4742C /* libresolv.9.dylib */,
@@ -571,22 +662,18 @@
 		00A2B2041807299A00A4742C /* VideoChatApp */ = {
 			isa = PBXGroup;
 			children = (
-				00A2B3551807337500A4742C /* Constants.h */,
 				00A2B20D1807299A00A4742C /* AppDelegate.h */,
 				00A2B20E1807299A00A4742C /* AppDelegate.m */,
-				00A2B2161807299A00A4742C /* ChatViewController.h */,
-				00A2B2171807299A00A4742C /* ChatViewController.m */,
-				00A2B2191807299A00A4742C /* ChatViewController.xib */,
-				00A2B2281807311000A4742C /* SplashController.h */,
-				00A2B2291807311000A4742C /* SplashController.m */,
-				00A2B22B1807316200A4742C /* SplashController.xib */,
 				00A2B2CB180731DE00A4742C /* Classes */,
+				00A2B3551807337500A4742C /* Constants.h */,
+				006DF13D180AE6EB00D3BA63 /* Controllers */,
 				00A2B22D180731A100A4742C /* Externals */,
 				00A2B375180746DC00A4742C /* images */,
+				006DF139180AE28000D3BA63 /* Models */,
+				006DF143180AE7C900D3BA63 /* Resources */,
 				00A2B2051807299A00A4742C /* Supporting Files */,
-				00A96F751807C0DB005A510C /* UserDetailViewController.h */,
-				00A96F761807C0DB005A510C /* UserDetailViewController.m */,
-				00A96F771807C0DB005A510C /* UserDetailViewController.xib */,
+				006DF12E180ABE2B00D3BA63 /* UserCell.h */,
+				006DF12F180ABE2B00D3BA63 /* UserCell.m */,
 			);
 			path = VideoChatApp;
 			sourceTree = "<group>";
@@ -595,7 +682,6 @@
 			isa = PBXGroup;
 			children = (
 				00A2B2061807299A00A4742C /* VideoChatApp-Info.plist */,
-				00A2B22118072AA400A4742C /* fcebook_login.png */,
 				00A2B2071807299A00A4742C /* InfoPlist.strings */,
 				00A2B20A1807299A00A4742C /* main.m */,
 				00A2B20C1807299A00A4742C /* VideoChatApp-Prefix.pch */,
@@ -1131,8 +1217,6 @@
 				00A2B2111807299A00A4742C /* Default.png in Resources */,
 				00A2B2131807299A00A4742C /* Default@2x.png in Resources */,
 				00A2B2151807299A00A4742C /* Default-568h@2x.png in Resources */,
-				00A2B21B1807299A00A4742C /* ChatViewController.xib in Resources */,
-				00A2B22218072AA400A4742C /* fcebook_login.png in Resources */,
 				00A2B22C1807316200A4742C /* SplashController.xib in Resources */,
 				00A2B29F180731A100A4742C /* FBDialog.bundle in Resources */,
 				00A2B3C7180746DD00A4742C /* 3item.png in Resources */,
@@ -1221,7 +1305,15 @@
 				00A2B4211807473100A4742C /* Icon~ipad.png in Resources */,
 				00A2B4221807473100A4742C /* Icon~ipad@2x.png in Resources */,
 				00A96F741807A450005A510C /* pin.png in Resources */,
-				00A96F791807C0DB005A510C /* UserDetailViewController.xib in Resources */,
+				006DF12D180AA5D600D3BA63 /* SignUpViewController.xib in Resources */,
+				006DF132180ABE8500D3BA63 /* UserCell.xib in Resources */,
+				006DF136180AC18600D3BA63 /* UsersListViewController.xib in Resources */,
+				006DF138180AD7AD00D3BA63 /* UserDetailViewController.xib in Resources */,
+				006DF142180AE72400D3BA63 /* VideoCallViewController.xib in Resources */,
+				006DF149180AFACA00D3BA63 /* callAccept.jpg in Resources */,
+				006DF14A180AFACA00D3BA63 /* callReject.jpg in Resources */,
+				006DF14B180AFACA00D3BA63 /* person.png in Resources */,
+				006DF14D180AFAE100D3BA63 /* ringing.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1234,7 +1326,7 @@
 			files = (
 				00A2B20B1807299A00A4742C /* main.m in Sources */,
 				00A2B20F1807299A00A4742C /* AppDelegate.m in Sources */,
-				00A2B2181807299A00A4742C /* ChatViewController.m in Sources */,
+				00A2B2181807299A00A4742C /* UsersListViewController.m in Sources */,
 				00A2B22A1807311000A4742C /* SplashController.m in Sources */,
 				00A2B29E180731A100A4742C /* Facebook.m in Sources */,
 				00A2B2A0180731A100A4742C /* FBDialog.m in Sources */,
@@ -1309,6 +1401,10 @@
 				00A2B352180731DF00A4742C /* MBProgressHUD.m in Sources */,
 				00A2B353180731DF00A4742C /* ViewTouch.m in Sources */,
 				00A96F781807C0DB005A510C /* UserDetailViewController.m in Sources */,
+				006DF12C180AA5D600D3BA63 /* SignUpViewController.m in Sources */,
+				006DF130180ABE2C00D3BA63 /* UserCell.m in Sources */,
+				006DF13C180AE2A900D3BA63 /* User.m in Sources */,
+				006DF141180AE72400D3BA63 /* VideoCallViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1321,14 +1417,6 @@
 				00A2B2081807299A00A4742C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		00A2B2191807299A00A4742C /* ChatViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00A2B21A1807299A00A4742C /* en */,
-			);
-			name = ChatViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

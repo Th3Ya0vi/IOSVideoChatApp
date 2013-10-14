@@ -9,6 +9,7 @@
 #import "SplashController.h"
 #import "AppDelegate.h"
 #import "NumberToLetterConverter.h"
+#import "UsersListViewController.h"
 
 @interface SplashController ()
 
@@ -143,7 +144,7 @@
     
     
     // auth in Chat
-    //[[FBService shared] logInChat];
+    [[FBService shared] logInChat];
     
     // get user's profile
     [[FBService shared] userProfileWithDelegate:self];
@@ -333,9 +334,9 @@
         
         // show messages
         //((AppDelegate *)[[UIApplication sharedApplication] delegate]).tabBarController.selectedIndex = 0;
-        
-         [self dismissModalViewControllerAnimated:YES];
-        
+        [self dismissModalViewControllerAnimated:YES];
+
+        //[self.navigationController popViewControllerAnimated:YES];
         [[FBService shared].facebook setSessionDelegate:nil];
         
         

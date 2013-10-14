@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UserDetailViewController : UIViewController
+@property (nonatomic, strong) QBUUser *selectedUser;
 
 @end

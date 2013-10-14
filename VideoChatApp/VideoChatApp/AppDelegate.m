@@ -8,10 +8,10 @@
 
 #import "AppDelegate.h"
 
-#import "ChatViewController.h"
+#import "UsersListViewController.h"
 #import "SplashController.h"
 #import "NumberToLetterConverter.h"
-
+#import "SignUpViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -30,15 +30,20 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.chatViewController = [[ChatViewController alloc] initWithNibName:@"ChatViewController" bundle:nil];
-    self.window.rootViewController = self.chatViewController;
+//    self.chatViewController = [[ChatViewController alloc] initWithNibName:@"ChatViewController" bundle:nil];
+//    self.window.rootViewController = self.chatViewController;
     
-//    SplashController *splashViewController = [[SplashController alloc] initWithNibName:@"SplashController" bundle:nil];
-//    self.window.rootViewController = splashViewController;
+    self.signUpViewController = [[SignUpViewController alloc] initWithNibName:@"SignUpViewController" bundle:nil];
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:self.signUpViewController];
+    [self.signUpViewController.navigationController setNavigationBarHidden:YES];
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
+
+
 
     // show splash
-    [self showSplashWithAnimation:NO];
-    [self.window makeKeyAndVisible];
+    //[self showSplashWithAnimation:NO];
 
     return YES;
 }
@@ -47,7 +52,9 @@
     // show Splash
     SplashController *splashViewController = [[SplashController alloc] initWithNibName:@"SplashController" bundle:nil];
     splashViewController.openedAtStartApp = !animated;
-    [self.chatViewController presentModalViewController:splashViewController animated:animated];
+    //[self.chatViewController presentModalViewController:splashViewController animated:animated];
+    [self.usersListViewController.navigationController pushViewController:splashViewController animated:animated];
+
     //[splashViewController release];
     
     // logout
@@ -62,7 +69,7 @@
     // show Splash
     SplashController *splashViewController = [[SplashController alloc] initWithNibName:@"SplashController" bundle:nil];
     splashViewController.openedAtStartApp = !animated;
-    [self.chatViewController presentModalViewController:splashViewController animated:animated];
+    [self.usersListViewController presentModalViewController:splashViewController animated:animated];
     //[splashViewController release];
     
     // logout

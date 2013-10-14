@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class ChatViewController;
+@class UsersListViewController;
+@class SignUpViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ChatViewController *chatViewController;
+@property (strong, nonatomic) UsersListViewController *usersListViewController;
+@property (strong, nonatomic) SignUpViewController *signUpViewController;
 
-@end
+- (void)showSplashWithAnimation:(BOOL) animated;
+- (void)showSplashWithAnimation:(BOOL) animated showLoginButton:(BOOL)isShow;@end
