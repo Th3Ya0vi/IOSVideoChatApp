@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class UsersListViewController;
 
-@interface SignUpViewController : UIViewController <QBActionStatusDelegate, UIAlertViewDelegate>
+@interface SignUpViewController : UIViewController <QBChatDelegate, QBActionStatusDelegate, UIAlertViewDelegate>
 
 
 @end

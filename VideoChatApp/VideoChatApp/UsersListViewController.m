@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "UserCell.h"
 #import "UserDetailViewController.h"
+#import "User.h"
 
 @interface UsersListViewController ()
 
@@ -78,7 +79,18 @@
         }
         
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    }
+    } else if([result isKindOfClass:[QBUUserLogOutResult class]]){
+		QBUUserLogOutResult *res = (QBUUserLogOutResult *)result;
+        
+		if(res.success){
+		    NSLog(@"LogOut successful.");
+            self.currentUser = nil;
+            [User sharedInstance].currentQBUser = nil;
+            [self.navigationController popToRootViewControllerAnimated:YES];
+		}else{
+            NSLog(@"errors=%@", result.errors);
+		}
+	}
 }
 
 
@@ -147,14 +159,11 @@
         [[FBService shared] logOutChat];
     });*/
     
-    
-    
-    // Logout User
-        self.currentUser = nil;
-        
         // logout user
-        [QBUsers logOutWithDelegate:nil];
-        [self.navigationController popToRootViewControllerAnimated:YES];
-        //[self notLoggedIn];
+    if ([[QBChat instance]isLoggedIn]) {
+        [[QBChat instance] logout];
+    }
+        [QBUsers logOutWithDelegate:self];
 }
 @end
+

@@ -1495,6 +1495,7 @@
 					"\"$(SRCROOT)/VideoChatApp/Externals/Flurry\"",
 					"\"$(SRCROOT)/VideoChatApp/Externals/XMPP_Framework\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1517,6 +1518,7 @@
 					"\"$(SRCROOT)/VideoChatApp/Externals/Flurry\"",
 					"\"$(SRCROOT)/VideoChatApp/Externals/XMPP_Framework\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
